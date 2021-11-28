@@ -1,0 +1,24 @@
+R 1024 1024 
+NXT ./elinia.cub
+
+NO ./tex/jakum1.xpm
+SO ./tex/jakum2.xpm
+WE ./tex/jakum3.xpm
+EA ./tex/jakum4.xpm
+
+S ./tex/jakum(1).xpm ./tex/kage.xpm ./tex/cheeze.xpm ./tex/power.xpm ./tex/power1.xpm ./tex/kage_weapon.xpm ./tex/cold1.xpm ./tex/cold2.xpm ./tex/cold3.xpm ./tex/cold4.xpm ./tex/cold5.xpm ./tex/cold6.xpm ./tex/cold7.xpm ./tex/cold8.xpm ./tex/cold9.xpm ./tex/cold10.xpm ./tex/cold11.xpm ./tex/cold12.xpm ./tex/sunder1.xpm ./tex/sunder2.xpm ./tex/sunder3.xpm ./tex/sunder4.xpm ./tex/sunder5.xpm ./tex/sunder6.xpm ./tex/sunder7.xpm ./tex/sunder8.xpm ./tex/sunder9.xpm ./tex/sunder10.xpm ./tex/sunder11.xpm ./tex/sunder12.xpm ./tex/sunder13.xpm ./tex/sunder14.xpm ./tex/sunder15.xpm ./tex/sunder16.xpm ./tex/sunder17.xpm ./tex/sunder18.xpm ./tex/sunder19.xpm ./tex/sunder20.xpm ./tex/sunder21.xpm ./tex/sunder22.xpm ./tex/sunder23.xpm ./tex/sunder24.xpm ./tex/sunder25.xpm ./tex/sunder26.xpm ./tex/sunder27.xpm ./tex/sunder28.xpm ./tex/sunder29.xpm ./tex/sunder30.xpm ./tex/sunder31.xpm ./tex/sunder32.xpm ./tex/sunder33.xpm ./tex/sunder34.xpm ./tex/sunder35.xpm ./tex/sunder36.xpm ./tex/sunder37.xpm ./tex/sunder38.xpm ./tex/sunder39.xpm ./tex/sunder40.xpm ./tex/sunder41.xpm
+
+F ./tex/jakum_b.xpm
+C ./tex/jakum_c.xpm
+
+111111111111111111111111111
+111111111111111111111111111
+114000000000400000000000511
+111000000001114000000000111
+110000003000000000000000011
+11000E000000000000000200011
+110000000000000000000000011
+111000111000001115000004111
+115000040000000500000001111
+111111111111111111111111111
+111111111111111111111111111
