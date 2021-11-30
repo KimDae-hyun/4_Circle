@@ -17,9 +17,10 @@ PresidentialPardonForm::PresidentialPardonForm() : Form("Presidential Form", 25,
     std::cout << "Create PresidentialPardonForm!" << std::endl;
 }
 
-PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &src)
+PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &src) : Form(src)
 {
     *this = src;
+    std::cout << "Copy Create PresidentialPardonForm!" << std::endl;
 }
 
 PresidentialPardonForm::PresidentialPardonForm(const std::string target) : Form("Presidential Form", 25, 5, target)
@@ -30,10 +31,10 @@ PresidentialPardonForm::PresidentialPardonForm(const std::string target) : Form(
 PresidentialPardonForm& PresidentialPardonForm::operator=(const PresidentialPardonForm &src)
 {
     if (this != &src)
-        {
-            std::cout << "Create PresidentialPardonForm!" << std::endl;
-        }
-        return (*this);
+    {
+        ;
+    }
+    return (*this);
 }
 
 PresidentialPardonForm::~PresidentialPardonForm()

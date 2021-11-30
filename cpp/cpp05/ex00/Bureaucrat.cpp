@@ -24,7 +24,7 @@ Bureaucrat::Bureaucrat(const Bureaucrat &src) : name(src.name)
 	std::cout << "Copy Create Bureaucrat!" << std::endl;
 }
 
-Bureaucrat::Bureaucrat(const int grade) : name("cheolsoo")
+Bureaucrat::Bureaucrat(const std::string name, const int grade) : name(name)
 {
     if (grade < 1)
         throw GradeTooHighException;
@@ -32,14 +32,12 @@ Bureaucrat::Bureaucrat(const int grade) : name("cheolsoo")
         throw GradeTooLowException;
     this->grade = grade;
     std::cout << "Create Bureaucrat!" << std::endl;
-}  
+}
 
 Bureaucrat& Bureaucrat::operator=(const Bureaucrat &src)
 {
     if (this != &src)
-    {
         grade = src.getGrade();
-    }
     return (*this);
 }
 
@@ -96,3 +94,12 @@ void Bureaucrat::demotion(int changetheworld)
     std::cout << *this ;
 }
 
+const char *HighException::what() const throw()
+{
+    return ("Too High !!!");
+}
+
+const char *LowException::what() const throw()
+{
+    return("Too Low !!!");
+}

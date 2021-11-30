@@ -20,13 +20,14 @@ Intern::Intern()
 Intern::Intern(const Intern &src)
 {
     *this = src;
+    std::cout << "Copy Create Intern!" << std::endl;
 }
 
 Intern& Intern::operator=(const Intern &src)
 {
     if (this != &src)
     {
-        std::cout << "Create Intern!" << std::endl;
+		;
     }
     return (*this);
 }

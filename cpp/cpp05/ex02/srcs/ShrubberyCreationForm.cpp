@@ -17,9 +17,10 @@ ShrubberyCreationForm::ShrubberyCreationForm() : Form("Shrubbery Form", 145, 137
     std::cout << "Create ShrubberyCreationForm!" << std::endl;
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &src)
+ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &src) : Form(src)
 {
     *this = src;
+    std::cout << "Copy Create ShrubberyCreationForm!" << std::endl;
 }
 
 ShrubberyCreationForm::ShrubberyCreationForm(const std::string target) : Form("Shrubbery Form", 145, 137, target)
@@ -30,10 +31,10 @@ ShrubberyCreationForm::ShrubberyCreationForm(const std::string target) : Form("S
 ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationForm &src)
 {
     if (this != &src)
-        {
-            std::cout << "Create ShrubberyCreationForm!" << std::endl;
-        }
-        return (*this);
+    {
+        ;
+    }
+    return (*this);
 }
 
 ShrubberyCreationForm::~ShrubberyCreationForm()

@@ -17,7 +17,7 @@ int main()
     std::cout << "test 1 ------------------" << std::endl;
     try
     {
-        Bureaucrat cheolsoo(150);
+        Bureaucrat cheolsoo("cheolsoo", 150);
         cheolsoo.promotion();
         cheolsoo.demotion();
         std::cout << "Now " << cheolsoo;
@@ -30,7 +30,7 @@ int main()
     std::cout << "test 2 ------------------" << std::endl;
     try
     {
-        Bureaucrat cheolsoo(100);
+        Bureaucrat cheolsoo("cheolsoo", 100);
         cheolsoo.promotion(50);
         cheolsoo.demotion(20);
         cheolsoo.promotion();
@@ -45,7 +45,7 @@ int main()
     std::cout << "test 3 ------------------" << std::endl;
     try
     {
-        Bureaucrat cheolsoo(200);
+        Bureaucrat cheolsoo("cheolsoo", 200);
         cheolsoo.promotion(50);
         std::cout << "Now " << cheolsoo;
     }
@@ -57,7 +57,7 @@ int main()
     std::cout << "test 4 ------------------" << std::endl;
     try
     {
-        Bureaucrat cheolsoo(3);
+        Bureaucrat cheolsoo("cheolsoo", 3);
         cheolsoo.promotion(3);
         cheolsoo.demotion(200);
         std::cout << "Now " << cheolsoo;

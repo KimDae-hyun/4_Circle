@@ -17,9 +17,10 @@ RobotomyRequestForm::RobotomyRequestForm() : Form("Robotomy Form", 72, 45, "Robo
     std::cout << "Create RobotomyRequestForm!" << std::endl;
 }
 
-RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &src)
+RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &src) : Form(src)
 {
     *this = src;
+    std::cout << "Copy Create RobotomyRequestForm!" << std::endl;
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const std::string target) : Form("Robotomy Form", 72, 45, target)
@@ -30,10 +31,10 @@ RobotomyRequestForm::RobotomyRequestForm(const std::string target) : Form("Robot
 RobotomyRequestForm& RobotomyRequestForm::operator=(const RobotomyRequestForm &src)
 {
     if (this != &src)
-        {
-            std::cout << "Create RobotomyRequestForm!" << std::endl;
-        }
-        return (*this);
+    {
+        ;
+    }
+    return (*this);
 }
 
 RobotomyRequestForm::~RobotomyRequestForm()
@@ -53,5 +54,4 @@ void RobotomyRequestForm::execute(Bureaucrat const & executor) const
         std::cout << "RobotomyForm : <" << getTarget() << "> has been failed to be robotomized." << std::endl;
     else
         std::cout << "RobotomyForm : <" << getTarget() << "> has been robotomized successfully." << std::endl;
-
 }

@@ -2,7 +2,7 @@ NAME =		Intern
 
 CC =		clang++
 
-CXXFLAGS =	-std=c++98 -Wall -Wextra -Werror
+CXXFLAGS =	-Wall -Wextra -Werror
 
 SRC =		main.cpp Bureaucrat.cpp Form.cpp \
 			ShrubberyCreationForm.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp Intern.cpp
@@ -16,7 +16,7 @@ INC_PATH = 	./includes
 all :		$(NAME)
 
 $(NAME) : $(OBJ)
-		$(CC) $(CXXFLAGS) -I $(INC_PATH) -o $@ $^
+		$(CC) $(CXXFLAGS) -I $(INC_PATH) -o $@ $(SRC_PATH)
 
 clean :
 			rm -f $(OBJ)
