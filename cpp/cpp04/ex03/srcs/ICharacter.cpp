@@ -42,7 +42,7 @@ Character & Character::operator=(const Character& src)
 		for (int i = 0; i < 4; i++)
 		{
 			if (src.materia[i] != NULL)
-				materia[i] = src.materia[i];
+				materia[i] = src.materia[i]->clone();
 			else
 				materia[i] = NULL;
 		}

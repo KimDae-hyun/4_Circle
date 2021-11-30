@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: daekim <daekim@student.42seoul.kr>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/30 19:48:44 by daekim            #+#    #+#             */
+/*   Updated: 2021/11/30 19:49:01 by daekim           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Serialization.hpp"
 
 uintptr_t serialize(Data* ptr)
 {
 	uintptr_t i;
-	i = reinterpret_cast<uintptr_t> (ptr);
 
+	i = reinterpret_cast<uintptr_t> (ptr);
 	return (i);
 }
 

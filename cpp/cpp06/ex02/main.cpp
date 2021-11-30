@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: daekim <daekim@student.42seoul.kr>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/30 19:55:06 by daekim            #+#    #+#             */
+/*   Updated: 2021/11/30 19:55:34 by daekim           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Base.hpp"
 
-Base * generate(void)
+Base *generate(void)
 {
 	int random;
 	Base *type;
@@ -32,7 +44,7 @@ void identify(Base& p)
 	try
 	{
 		ref = dynamic_cast<A&>(p);
-		std::cout << "&A" << std::endl;
+		std::cout << "A" << std::endl;
 	}
 	catch (...)
 	{
@@ -41,7 +53,7 @@ void identify(Base& p)
 	try
 	{
 		ref = dynamic_cast<B&>(p);
-		std::cout << "&B" << std::endl;
+		std::cout << "B" << std::endl;
 	}
 	catch(...)
 	{
@@ -50,7 +62,7 @@ void identify(Base& p)
 	try
 	{
 		ref = dynamic_cast<C&>(p);
-		std::cout << "&C" << std::endl;
+		std::cout << "C" << std::endl;
 	}
 	catch(...)
 	{

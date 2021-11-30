@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Conversion.hpp                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: daekim <daekim@student.42seoul.kr>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/30 19:46:47 by daekim            #+#    #+#             */
+/*   Updated: 2021/11/30 19:47:33 by daekim           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef CONVERSION_HPP
 # define CONVERSION_HPP
 
@@ -7,6 +19,7 @@
 # include <cstdlib>
 # include <climits>
 # include <iomanip>
+# include <cmath>
 
 class Conversion
 {

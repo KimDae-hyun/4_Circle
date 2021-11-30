@@ -1,6 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Serialization.hpp                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: daekim <daekim@student.42seoul.kr>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/30 19:48:24 by daekim            #+#    #+#             */
+/*   Updated: 2021/11/30 19:48:43 by daekim           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
-//#include <fstream>
-//#include <string>
 
 struct Data
 {
@@ -15,6 +25,7 @@ class Serialize
 {
 	private:
 		Data dt;
+
 	public:
 		Serialize();
 		Serialize(const Serialize &src);
