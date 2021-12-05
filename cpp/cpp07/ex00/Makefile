@@ -2,7 +2,7 @@ NAME =		Function
 
 CC =		clang++
 
-CXXFLAGS =	-Wall -Wextra -Werror
+CXXFLAGS =	-std=c++98 -Wall -Wextra -Werror
 
 SRC =		main.cpp
 
