@@ -6,7 +6,7 @@
 /*   By: daekim <daekim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 20:15:20 by daekim            #+#    #+#             */
-/*   Updated: 2021/12/05 20:15:41 by daekim           ###   ########.fr       */
+/*   Updated: 2021/12/12 19:21:05 by daekim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,9 +71,10 @@ Array<T>::~Array()
     std::cout << "Delete Array" << std::endl;   
 }
 
-template <typename T> 
+template <typename T>
 Array<T>& Array<T>::operator=(const Array &src)
 {
+	delete[] this->arr;
     arr_size = src.size();
     this->arr = new T[arr_size];
     for (size_t i = 0; i < arr_size; i++)

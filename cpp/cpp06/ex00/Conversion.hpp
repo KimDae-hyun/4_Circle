@@ -6,7 +6,7 @@
 /*   By: daekim <daekim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 19:46:47 by daekim            #+#    #+#             */
-/*   Updated: 2021/11/30 19:47:33 by daekim           ###   ########.fr       */
+/*   Updated: 2021/12/12 19:22:26 by daekim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ class Conversion
 		int isprint;
 		int d_zero;
 		int f_zero;
-		float fnum;
+		double fnum;
 		double dounum;
 		char *argv;
 

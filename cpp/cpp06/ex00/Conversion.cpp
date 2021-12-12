@@ -6,7 +6,7 @@
 /*   By: daekim <daekim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 19:46:23 by daekim            #+#    #+#             */
-/*   Updated: 2021/11/30 19:46:44 by daekim           ###   ########.fr       */
+/*   Updated: 2021/12/12 19:22:27 by daekim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -149,7 +149,7 @@ void Conversion::check_isprint()
 	if (point <= 15)
 		d_tmp = pow(0.1, 15 - point);
 	dounum = strtod(argv, NULL);
-	fnum = strtof(argv, NULL);
+	fnum = strtod(argv, NULL);
 	if (round(abs(dounum - atoi(argv)) * pow(10, 15 - point))\
 						/ pow(10, 15 - point) <= d_tmp)
 		d_zero = 1;
